@@ -1,27 +1,26 @@
-# Task
-請你嚴格遵照「行為驅動開發 (BDD)」的方式，來完成 @order.feature 中所有驗收情境的開發。
-不可同時進行 BDD 開發流程中多個步驟也不能略過任何一步驟，必須一步一步扎實執行並確認每一步的結果。
+《 AI 軟工百倍研究組織》是一場由《水球軟體學院》發起的技術研究社群，目標是集結全台具備軟體開發能力的工程師，共同推進 AI × BDD 開發流程的研究與實踐。
 
-# Context
+「如果大家都關注 AI x BDD 這件事，台灣軟工進度就有機會超前國外；
+當國外 AI 軟工都只會寫 rules 時，我們就已經全部都在寫 spec，產值絕對爆增。」
 
-## Design Guideline
-- 參考 entities ERD: @ERD.png 以及 OOD 設計圖：@OOD.png 。兩張圖中所指示的類別屬性及操作只是基準，你可視情況增加新的類別、屬性或行為。
+### 本組織將專注於以下目標
 
+1. 本組織相信 AI x BDD 的方法，一定能讓 AI 在背景就產出 80%~90% 可靠且正確的程式，而這一定是未來 Vibe Coding 的趨勢，你一定是想要追求最前沿的軟工技術才加入本組織。
 
-## Tech Stack
-1. Language Env：Java
-2. BDD Test framework: Cucumber
-3. Native test framework: Junit5
+2. 組織規劃好了初步研究藍圖，分為底下三大路線，每一大路線賞金十萬：​你的參與，不僅代表你願意走在 AI 軟體開發方法論的最前線，更代表你願意投身於一場嚴謹、務實、強調產出價值與技術驗證的研究歷程。
 
-## Application Environment
-1. App 類型：純模組程式碼
-2. 此 feature file 中的所有優惠邏輯存放至 OrderService 中
-3. Source code root: src/
+a. 開發流程全自動化（後端）— Feature file (BDD) 到 API Spec/ERD 到程式
+b. 開發流程全自動化（前端）— 線框 到 User-flow (BDD) 到程式
+c. 回饋流程智能化 (全端) — 前後端整合自動化建立新的驗收測試
 
-# BDD 開發流程
-1. 先建置出 cucumber walking skeleton  - 可順利運行 cucumber 以及至少一個 scenario ，確認至少有一個 test case 被 測試框架執行到。
+這三者只要都研究完成，那 Vibe Coding 才算是成熟，軟體工程師能與與 AI 「平行」合作帶來百倍產出，故稱「AI 百倍軟工研究組織」。
 
-2. 嚴格遵守 BDD 以及最小增量原則來開發所有程式碼，針對所有 scenario，一次開發一個 scenario，依序進行：
-    A. 一次選擇一個 scenario 實作，除此 scenario 之外的測試全部都 ignore。撰寫此 scenario 對應的 Steps (given, when, then)、開啟相關類別，但是每個類別的行為都不實作，並且執行測試，確認測試失敗 (test fail)，並且測試失敗的原因並非框架層級的錯誤，而是期望的「值」上的錯誤。嚴格確認這步驟完成後才能進行下一步的實作。
-    B. 為了通過上一步所撰寫的測試程式碼，請實作相關類別所需的程式碼，並確認能讓所有的測試程式碼都通過。請嚴格確認有執行到測試程式碼，從 test report 中覆述一次目前 test passed 的數量。
-    C. 遵守 clean code 原則，思考是否要重構每個類別的內部程式碼，如果必要重構的話，在重構完成之後，再執行一次測試，確保所有測試仍然通過，否則需修正邏輯直到測試全數通過。
+### 歡迎所有人參與
+
+你的參與，不僅代表你願意走在 AI 軟體開發方法論的最前線，更代表你願意投身於一場嚴謹、務實、強調產出價值與技術驗證的研究歷程（所有的研究紀錄都會使用 Github Repository 保存脈絡）。
+
+報名方法：
+1. 加入水球軟體學院 Discord：https://discord.gg/uWGTF7RSnW
+2. 照著此 Discord 社群內 #加入研究計劃 置頂訊息的指示進行即可成功報名
+
+若你已準備好成為推動 AI × BDD 開發方法的革新者，誠摯邀請你完成報名，與來自全台的技術夥伴攜手共創。
